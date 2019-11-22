@@ -1,2 +1,4 @@
-#Ignore folder names
-node_modules/
+/.idea/
+/bespoke-theme-*/
+/dist/
+/node_modules/

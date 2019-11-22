@@ -1,23 +1,41 @@
 {
-  "name": "flyingsanta",
+  "name": "presentation-flying-santa",
   "version": "1.0.0",
-  "description": "Flying Santa with Bespoke.js",
-  "main": "index.js",
-  "dependencies": {
-    "bespoke": "^1.1.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anggiedwarsa/FlyingSanta.git"
+    "url": "https://github.com/anggiedwarsa/FlyingSanta.git"
   },
-  "author": "Jenny Kinata, Louis & Anggi Edwarsa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anggiedwarsa/FlyingSanta/issues"
+  "devDependencies": {
+    "bespoke": "^1.1.0",
+    "bespoke-bullets": "^1.1.0",
+    "bespoke-classes": "^1.0.0",
+    "bespoke-extern": "^1.0.0",
+    "bespoke-hash": "^1.0.2",
+    "bespoke-multimedia": "^1.1.0",
+    "bespoke-nav": "^1.0.2",
+    "bespoke-scale": "^1.0.1",
+    "browserify": "^14.4.0",
+    "del": "^3.0.0",
+    "gh-pages": "^1.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "normalizecss": "^3.0.0",
+    "through": "^2.3.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
-  "homepage": "https://github.com/anggiedwarsa/FlyingSanta#readme"
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }

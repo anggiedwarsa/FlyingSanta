@@ -1,0 +1,23 @@
+{
+  "name": "flyingsanta",
+  "version": "1.0.0",
+  "description": "Flying Santa with Bespoke.js",
+  "main": "index.js",
+  "dependencies": {
+    "bespoke": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anggiedwarsa/FlyingSanta.git"
+  },
+  "author": "Jenny Kinata, Louis & Anggi Edwarsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anggiedwarsa/FlyingSanta/issues"
+  },
+  "homepage": "https://github.com/anggiedwarsa/FlyingSanta#readme"
+}

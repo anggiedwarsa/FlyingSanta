@@ -1,5 +1,6 @@
 // Require Node modules in the browser thanks to Browserify: http://browserify.org
 var bespoke = require('bespoke');
+var bespokefx = require('bespoke-fx');
 var classes = require('bespoke-classes');
 var nav = require('bespoke-nav');
 var scale = require('bespoke-scale');

@@ -30,5 +30,8 @@
   },
   "engines": {
     "node": ">=4.2.0"
+  },
+  "dependencies": {
+    "bespoke-fx": "0.0.3"
   }
 }

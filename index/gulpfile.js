@@ -37,6 +37,18 @@ gulp.task('js', ['clean:js'], function() {
     .pipe(connect.reload());
 });
 
+gulp.task('flyingsanta', ['flyingsanta:js'], function() {
+  // see https://wehavefaces.net/gulp-browserify-the-gulp-y-way-bb359b3f9623
+  return browserify('src/scripts/flyingsanta.js').bundle()
+    .on('error', browserifyPlumber)
+    .pipe(source('src/scripts/flyingsanta.js'))
+    .pipe(buffer())
+    .pipe(isDist ? uglify() : through())
+    .pipe(rename('flyingsanta.js'))
+    .pipe(gulp.dest('dist/build'))
+    .pipe(connect.reload());
+});
+
 gulp.task('html', ['clean:html'], function() {
   return gulp.src('src/index.html')
     .pipe(gulp.dest('dist'))
@@ -66,6 +78,12 @@ gulp.task('fonts', ['clean:fonts'], function() {
     .pipe(connect.reload());
 });
 
+gulp.task('sounds', ['clean:sounds'], function() {
+  return gulp.src('src/sounds/*')
+    .pipe(gulp.dest('dist/sounds'))
+    .pipe(connect.reload());
+});
+
 gulp.task('clean', function() {
   return del.sync('dist');
 });
@@ -78,6 +96,10 @@ gulp.task('clean:js', function() {
   return del('dist/build/build.js');
 });
 
+gulp.task('flyingsanta:js', function() {
+  return del('dist/build/flyingsanta.js');
+});
+
 gulp.task('clean:css', function() {
   return del('dist/build/build.css');
 });
@@ -88,6 +110,10 @@ gulp.task('clean:images', function() {
 
 gulp.task('clean:fonts', function() {
   return del('dist/fonts');
+});
+
+gulp.task('clean:sounds', function() {
+  return del('dist/sounds');
 });
 
 gulp.task('connect', ['build'], function() {
@@ -109,7 +135,7 @@ gulp.task('publish', ['clean', 'build'], function(done) {
 // old alias for publishing on gh-pages
 gulp.task('deploy', ['publish']);
 
-gulp.task('build', ['js', 'html', 'css', 'images', 'fonts']);
+gulp.task('build', ['js', 'html', 'css', 'images', 'fonts', 'flyingsanta', 'sounds']);
 
 gulp.task('serve', ['connect', 'watch']);
 

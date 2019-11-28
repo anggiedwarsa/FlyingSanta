@@ -19,3 +19,16 @@
 .bespoke-after {
     transform: rotateY(90deg);
 }
+
+.bespoke-active #flyingsanta{
+  animation: canvas 2.5s ease-out;
+}
+
+@keyframes canvas{
+  0% {
+    transform: scale(0, 0) rotate(322deg);
+  }
+  100% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+}

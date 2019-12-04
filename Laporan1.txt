@@ -1,0 +1,22 @@
+Scrum Master: Anggi Saputra Edwarsa Siregar - 161111361
+
+1. Jum'at, 22 Nopember 2019
+- Buat repository baru di github.com
+- Buat card di trello
+- Install git
+
+2. Sabtu, 23 Nopember 2019
+- Setting git di windows
+- Install yoeman
+- Install bespoke
+- Install gulp
+
+3. Minggu, 24 Nopember 2019
+- Tambah gambar background
+- Tambah gambar christmas tree
+- Tambah gambar santa
+
+4. Senin, 25 Nopember 2019
+- Resize gambar santa
+- Mulai code file js untuk game flying santa
+- Buat slide pertama isi nama kelompok

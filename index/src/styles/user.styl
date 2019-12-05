@@ -2,8 +2,24 @@
 
 // New to Stylus? Check out http://learnboost.github.io/stylus
 // You can use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
-.bespoke-slide {
-  background-color: lightblue;
+
+.bespoke-slide{
+  background-color: hsl(350, 70%, 50%);
+    transition: all .8s ease;
+    transform-origin: 50% 50% -400px;
+    font-color: white;
+}
+
+body{
+  color: white ;
+}
+
+.bespoke-parent{
+  margin: 15px;
+}
+
+#slidegame{
+    background-color: #fff !important;
     transition: all .8s ease;
     transform-origin: 50% 50% -400px;
 }
@@ -24,6 +40,10 @@
   animation: canvas 2.5s ease-out;
 }
 
+.bespoke-active #flyingsantapic{
+  animation: muncul 1.5s ease-out;
+}
+
 @keyframes canvas{
   0% {
     transform: scale(0, 0) rotate(322deg);
@@ -31,4 +51,26 @@
   100% {
     transform: scale(1, 1) rotate(0deg);
   }
+}
+
+@keyframes muncul{
+  0%{
+    transform: skewY(40deg);
+  }
+  25%{
+    transform: skewY(30deg);
+  }
+  50%{
+    transform:skewY(20deg);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+h3 {
+  text-align: center;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 15px;
 }

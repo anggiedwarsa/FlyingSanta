@@ -41,9 +41,9 @@ document.body.onkeyup = function(e){
       draw();
       gameover = false;
     }
-    else{
-      playing = true;
-    }
+  }
+  else if(e.keyCode == 77){
+    playing = true;
   }
   else{
     playing=false;
@@ -60,7 +60,7 @@ function moveUp(){
 }
 
 function init(){
-  bX = 0;
+  bX = 20;
   bY = 100;
   gravity = 1.5;
   score = 0;
@@ -98,7 +98,7 @@ function draw(){
 
     // detect collision
 
-    if( bX + santa.width >= cAsap[i].x && bX <= cAsap[i].x + cAsapNorth.width && (bY <= cAsap[i].y + cAsapNorth.height || bY+santa.height >= cAsap[i].y+constant) || bY + santa.height >=  cvs.height){
+    if( bX + santa.width >= cAsap[i].x && bX <= cAsap[i].x + cAsapNorth.width && (bY <= cAsap[i].y + cAsapNorth.height || bY+santa.height >= cAsap[i].y+constant) || bY + santa.height >=  cvs.height || bY<=0){
       // location.reload(); // reload the page
       gameover = true;
       playing = false;

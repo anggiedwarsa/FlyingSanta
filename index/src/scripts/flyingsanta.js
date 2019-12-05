@@ -42,7 +42,7 @@ document.body.onkeyup = function(e){
       gameover = false;
     }
   }
-  else if(e.keyCode == 88){
+  else if(e.keyCode == 77){
     playing = true;
   }
   else{

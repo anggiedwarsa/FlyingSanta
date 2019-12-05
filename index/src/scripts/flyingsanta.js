@@ -41,9 +41,9 @@ document.body.onkeyup = function(e){
       draw();
       gameover = false;
     }
-    else{
-      playing = true;
-    }
+  }
+  else if(e.keyCode == 88){
+    playing = true;
   }
   else{
     playing=false;
@@ -60,7 +60,7 @@ function moveUp(){
 }
 
 function init(){
-  bX = 0;
+  bX = 20;
   bY = 100;
   gravity = 1.5;
   score = 0;
